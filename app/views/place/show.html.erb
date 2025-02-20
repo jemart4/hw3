@@ -3,14 +3,14 @@
 
 <h1> <%= @places["name"]%></h1> 
 
-<ul>
+
     <%  for entry in @entries%>
-    <p> <h2><%= entry["title"]%></h2>
-    <%= entry["occurred_on"]%>  </p>
+     <h2><%= entry["title"]%></h2>
+    <p><i><%= entry["occurred_on"]%> </i></p>
     <p><%= entry["description"]%> </p>
     <% end%>
   
-</ul>
+
 
 <p>
   <a href="/entry/new?place_id=<%=@places["id"]%>">New Post</a>
