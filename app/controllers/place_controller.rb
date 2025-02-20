@@ -23,4 +23,11 @@ def create
   redirect_to "/place"
   end
 
+  def show
+    # find a place
+    @places = Place.find_by({"id" => params["id"]})
+    
+    # render place/show view with posts about place
+  end
+
 end
