@@ -1,0 +1,18 @@
+<%= form_with :model => @entry do |form| %>
+  <p>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
+  </p>
+
+  <p>
+    <%= form.label "occurred_on" %>
+    <%= form.text_field "occurred_on" %>
+  </p>
+
+  <p>
+    <%= form.label "place_id" %>
+    <%= form.text_field "place_id" %>
+  </p>
+  
+  <%= form.submit %>
+<% end %>

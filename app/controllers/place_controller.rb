@@ -26,7 +26,7 @@ def create
   def show
     # find a place
     @places = Place.find_by({"id" => params["id"]})
-    
+    @entries = Entry.where({"place_id" => @places["id"]})
     # render place/show view with posts about place
   end
 
