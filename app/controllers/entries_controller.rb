@@ -1,9 +1,9 @@
-class EntryController < ApplicationController
+class EntriesController < ApplicationController
 
 
  
   def new
-    # render entry/new view with new Contact form
+    # render entry/new view with new post form
   end
 
   def create
