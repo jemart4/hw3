@@ -1,4 +1,4 @@
-class PlaceController < ApplicationController
+class PlacesController < ApplicationController
 
   def index
     # find all Places rows
@@ -19,7 +19,7 @@ class PlaceController < ApplicationController
     #   # save Company row
     @places.save
     #   # redirect user
-    redirect_to "/place"
+    redirect_to "/places"
   end
 
   def show

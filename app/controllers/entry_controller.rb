@@ -23,7 +23,7 @@ class EntryController < ApplicationController
     @entry.save
 
     # redirect user
-    redirect_to "/place/#{@entry["place_id"]}"
+    redirect_to "/places/#{@entry["place_id"]}"
   end
 
 
